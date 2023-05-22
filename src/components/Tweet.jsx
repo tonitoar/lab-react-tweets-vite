@@ -1,38 +1,51 @@
-function Tweet() {
+import ProfileImage from "./ProfileImage.jsx"; 
+import User from "./User.jsx";
+import Timestamps from "./Timestamps.jsx";
+import Message from "./Message.jsx";
+
+
+
+function Tweet(props) {
+  
+  //console.log("----------------------", props) 
+
+// linkejem el array amb el props, amb el console.log veiem que es un objecte amb una propietat "tweet". 
+// dintre d'aquesta hi ha un objecte amb 3 propietats: user( amb 3 dins), timestamp i message. 
+
   return (
-    <div className="tweet">
-      <img
-        src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/ih_logo.jpeg"
-        className="profile"
-        alt="profile"
-      />
+    // <div className="tweet">
+    //   <img
+    //     src={props.tweet.user.image}
+    //     className="profile"
+    //     alt="profile"
+    //   />
 
-      <div className="body">
-        <div className="top">
-          <span className="user">
-            <span className="name">Ironhack</span>
-            <span className="handle">@ironhack</span>
-          </span>
+    //   <div className="body">
+    //     <div className="top">
+    //       <span className="user">
+    //         <span className="name">{props.tweet.user.name}</span>
+    //         <span className="handle">{props.tweet.user.handle}</span>
+    //       </span>
 
-          <span className="timestamp">Nov 30, 2020</span>
-        </div>
+    //       <span className="timestamp">{props.tweet.timestamp}</span>
+    //     </div>
 
-        <p className="message">
-          On December 7th, we will be hosting a #webinar that will introduce you
-          to #SQL! Are you ready? 🚀
-        </p>
+    //     <p className="message">
+    //       {props.tweet.message}
+    //     </p>
 
-        <div className="actions">
-          {/* Font Awesome icons */}
-          <i className="far fa-comment"></i>
-          <i className="fas fa-retweet"></i>
-          <i className="far fa-heart"></i>
-          <i className="fas fa-share"></i>
-        </div>
-      </div>
+    //     <div className="actions">
+    //       {/* Font Awesome icons */}
+    //       <i className="far fa-comment"></i>
+    //       <i className="fas fa-retweet"></i>
+    //       <i className="far fa-heart"></i>
+    //       <i className="fas fa-share"></i>
+    //     </div>
+    //   </div>
 
-      <i className="fas fa-ellipsis-h"></i>
-    </div>
+    //   <i className="fas fa-ellipsis-h"></i>
+    // </div>
+    <ProfileImage image={IMAGE_URL} />
   );
 }
 

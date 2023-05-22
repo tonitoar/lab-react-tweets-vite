@@ -24,6 +24,7 @@ const tweetsArray = [
     message:
       "sometimes. the human presses their noggin against mine. to figure out what i’m thinking. so i just think really hard. about how much i love them. and hope they figure it out",
   },
+
   {
     user: {
       name: "Thoughts of Dog®",
@@ -40,7 +41,7 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet tweet={ tweetsArray[0] } />
     </div>
   );
 }
