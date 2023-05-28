@@ -1,7 +1,8 @@
-function Timestamp() {
+function Timestamp({time}) {
+  console.log(time)
     return (
       <>
-        <span className="timestamp"> TWEET_TIMESTAMP </span>
+        <span className="timestamp"> {time} </span>
       </>
     );
   }

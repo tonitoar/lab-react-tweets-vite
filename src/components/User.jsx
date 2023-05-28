@@ -1,9 +1,12 @@
-function User() {
+function User({userData}) {
+//console.log(userData)
+  const {name, handle} = userData
+
   return (
     <>
       <span className="user">
-        <span className="name"> USER_NAME </span>
-        <span className="handle">@ USER_HANDLE</span>
+        <span className="name"> {name} </span>
+        <span className="handle">@{handle}</span>
       </span>
     </>
   );
